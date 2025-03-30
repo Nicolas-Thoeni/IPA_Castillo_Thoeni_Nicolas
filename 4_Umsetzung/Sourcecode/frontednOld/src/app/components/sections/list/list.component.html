@@ -1,0 +1,10 @@
+<div class='wrapper'>
+    <div class='top'>
+        <div *ngFor='let item of items.keys'>
+            {{ item }}
+        </div>
+    </div>
+    <div class='bottom'>
+        <app-item *ngFor='let item of items.items' [content]='item'></app-item>
+    </div>
+</div>

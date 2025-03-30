@@ -1,0 +1,5 @@
+<div class='wrapper'>
+    <a *ngFor='let route of routes; let i = index;' href='{{ getLocation(route) }}' class='link'>
+        <span>{{ route }}</span>
+    </a>
+</div>

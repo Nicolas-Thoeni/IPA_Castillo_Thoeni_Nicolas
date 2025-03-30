@@ -1,0 +1,41 @@
+.wrapper {
+    position: absolute;
+    top: 1em;
+    left: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0.5em 0.5em 0.5em 1em;
+
+    color: white;
+    fill: white;
+    font-weight: bold;
+
+    background-color: var(--insel-green);
+    border-radius: 1em;
+
+    translate: -50% 0;
+    transform: translateY(calc(-100% - 1em));
+
+    transition: 0.5s;
+}
+
+.wrapper > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 2em;
+    height: 2em;
+
+    > svg {
+        width: 1em;
+        height: 1em;
+    }
+}
+
+.open {
+    transform: translateY(0);
+}
