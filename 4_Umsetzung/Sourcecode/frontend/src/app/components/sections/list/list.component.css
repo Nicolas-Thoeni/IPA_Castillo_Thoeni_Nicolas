@@ -1,0 +1,53 @@
+:host {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+
+    overflow: hidden;
+}
+
+:host::before {
+    content: '';
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    height: 1.5em;
+
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0) 100%);
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(100% - var(--scrollbar-width));
+    min-height: 2em;
+
+    border-bottom: 1px solid var(--insel-grey);
+
+    > .text {
+        width: 100%;
+        padding-left: 2em;
+
+        font-weight: bolder;
+        color: black;
+    }
+}
+
+.bottom {
+    height: 100%;
+    width: 100%;
+
+    scrollbar-width: var(--scrollbar-width);
+
+    overflow-y: auto;
+
+    > div:last-child {
+        height: 1.5em;
+    }
+}

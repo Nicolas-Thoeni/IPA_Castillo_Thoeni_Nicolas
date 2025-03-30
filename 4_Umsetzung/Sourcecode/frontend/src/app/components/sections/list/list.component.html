@@ -1,0 +1,15 @@
+<div class='top'>
+    <div *ngFor='let item of content' class='text'>
+        <ng-container *ngIf='typeof item == "string" || typeof item == "number"'>
+            {{ item }}
+        </ng-container>
+    
+        <ng-container *ngIf='isComponent(item)'>
+            <ng-container #dynamicComponent></ng-container>
+        </ng-container>
+    </div>
+</div>
+<div class='bottom'>
+    <app-item *ngFor='let item of items' [item]='item'></app-item>
+    <div></div>
+</div>
