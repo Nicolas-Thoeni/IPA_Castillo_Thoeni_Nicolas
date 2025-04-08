@@ -1,0 +1,6 @@
+<app-header [title]='getTitle(true)'></app-header>
+<h2>{{ getTitle(false) }}</h2>
+<div class='questionnaire'>
+    <app-questionnaire-part-one *ngIf='part == 1'></app-questionnaire-part-one>
+    <app-questionnaire-part-two *ngIf='part == 2'></app-questionnaire-part-two>
+</div>

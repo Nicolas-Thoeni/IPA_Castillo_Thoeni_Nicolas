@@ -1,0 +1,64 @@
+:host {
+    padding: 2em;
+    padding-top: 0;
+
+    overflow: auto;
+
+    > h2 {
+        margin: 0.5em 0 1rem 0;
+    }
+
+    h4 {
+        margin: 0;
+        margin-bottom: 1rem
+    }
+}
+
+.partOne {
+    > div {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-column-gap: 1em;
+        grid-row-gap: 1em;
+
+        margin-bottom: 1.5em;
+    }
+
+    .input1 { grid-area: 1 / 1 / 2 / 3; }
+    .input2 { grid-area: 1 / 3 / 2 / 5; }
+    .input3 { grid-area: 1 / 5 / 2 / 7; }
+    .input4 { grid-area: 2 / 1 / 3 / 4; }
+    .input5 { grid-area: 2 / 4 / 3 / 7; }
+
+    .personalData {
+        .input4 { grid-area: 2 / 1 / 3 / 5; }
+        .input5 { grid-area: 2 / 5 / 3 / 7; }
+    }
+
+    .contactData {
+        .input1 { grid-area: 1 / 1 / 2 / 4; }
+        .input2 { grid-area: 1 / 4 / 2 / 7; }
+        .input3 { grid-area: 2 / 1 / 3 / 4; }
+        .input4 { grid-area: 2 / 4 / 3 / 7; }
+    }
+}
+
+.partTwo > div {
+    display: flex;
+
+    > span:first-child { width: 50%; }
+    > span:not(:first-child) {
+        display: flex;
+        justify-content: center;
+
+        width: 25%;
+    }
+}
+
+.partTwo {
+    > div:not(:first-child) {
+        margin-bottom: 1em;
+        border-bottom: 1px solid var(--insel-grey);
+    }
+}

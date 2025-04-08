@@ -3,7 +3,6 @@ import { ActivatedRoute } from '@angular/router';
 
 import { QuestionnaireItemModel } from '@models/questionnaireItem';
 
-import { ClipboardComponent } from '@sections/clipboard/clipboard.component';
 import { HeaderComponent } from '@sections/header/header.component';
 import { ListComponent } from '@sections/list/list.component';
 
@@ -12,7 +11,7 @@ import { MainService } from '@services/main.service';
 
 @Component({
     selector: 'app-questionnaires',
-    imports: [HeaderComponent, ListComponent, ClipboardComponent],
+    imports: [HeaderComponent, ListComponent],
     templateUrl: './questionnaires.component.html',
     styleUrls: ['./questionnaires.component.css']
 })

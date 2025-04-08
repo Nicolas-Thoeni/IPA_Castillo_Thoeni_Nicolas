@@ -1,0 +1,55 @@
+<form [formGroup]='personForm'>
+    <h2>Allgemeine Angaben zur Person</h2>
+    <div class='partOne'>
+        <h4>Allgemeine Daten</h4>
+        <div class='general'>
+            <input type='text' placeholder='Personen-ID' class='input1' />
+            <input type='text' placeholder='Eintrittsdatum' class='input2' />
+            <input type='text' placeholder='Befristung' class='input3' />
+            <input type='text' placeholder='Klinik/Abteilung' class='input4' />
+            <input type='text' placeholder='Funktion' class='input5' />
+        </div>
+        <h4>Personendaten</h4>
+        <div class='personalData'>
+            <input type='text' placeholder='Name' class='input1' />
+            <input type='text' placeholder='Vorname' class='input2' />
+            <input type='text' placeholder='Geburtsdatum' class='input3' />
+            <input type='text' placeholder='Adresse' class='input4' />
+            <input type='text' placeholder='PLZ, Wohnort' class='input5' />
+        </div>
+        <h4>Kontaktdaten</h4>
+        <div class='contactData'>
+            <input type='text' placeholder='Telefon privat' class='input1' />
+            <input type='text' placeholder='Telefon intern' class='input2' />
+            <input type='text' placeholder='E-Mailadresse privat' class='input3' />
+            <input type='text' placeholder='E-Mailadresse intern' class='input4' />
+        </div>
+    </div>
+    <h2>Arbeitsbezogene Informationen</h2>
+    <div class='partTwo'>
+        <div>
+            <span><h4>Arbeitsbezogene Informationen</h4></span>
+            <span>Ja</span>
+            <span>Nein</span>
+        </div>
+        <div>
+            <span>Wiedereintritt Insel Gruppe?</span>
+            <span><input type='radio' name='reentry'/></span>
+            <span><input type='radio' name='reentry'/></span>
+        </div>
+        <div>
+            <span>Haben Sie direkten Patientenkontakt?</span>
+            <span><input type='radio' name='patient'/></span>
+            <span><input type='radio' name='patient'/></span>
+        </div>
+        <div>
+            <span>Leisten Sie Nachtarbeit?</span>
+            <span><input type='radio' name='night'/></span>
+            <span><input type='radio' name='night'/></span>
+        </div>
+    </div>
+    <div>
+        <button disabled='true'>-</button>
+        <button>Nächste Seite</button>
+    </div>
+</form>
